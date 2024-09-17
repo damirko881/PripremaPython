@@ -1,0 +1,13 @@
+
+broj1 = 123456789
+broj2 = 987654321
+
+brojac = 0
+for i in range(0, 9, 3):
+    trojka1 = str(broj1)[i:i+3]
+    trojka2 = str(broj2)[i:i+3]
+    
+    if trojka1[0] == trojka1[-1] and trojka2[0] == trojka2[-1]:
+        brojac += 1
+
+print(f"Broj trojki gdje su prvi i zadnji brojevi jednaki: {brojac}")
